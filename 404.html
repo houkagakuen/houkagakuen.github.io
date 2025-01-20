@@ -73,10 +73,19 @@
             color: #000;
         }
 
+        /* リンクの修正 */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:visited {
+            color: inherit;
+        }
+
         /* コンテンツ */
         .content {
-            min-height: calc(100vh - 160px); /* フッターとヘッダーを差し引いた動的な高さ */
-            padding: 40px 20px;
+            padding: 20px 20px 40px;
             box-sizing: border-box;
         }
 
@@ -168,11 +177,11 @@
     <!-- ヘッダー -->
     <header>
         <div class="header-left">
-            <a href="https://houkagakuen.github.io/top/" style="text-decoration: none;">
+            <a href="https://houkagakuen.github.io/top/">
                 <img src="https://houkagakuen.github.io/top/favicon.HEIF" alt="ロゴ">
             </a>
             <div>
-                <a href="https://houkagakuen.github.io/top/" style="text-decoration: none; color: inherit;">
+                <a href="https://houkagakuen.github.io/top/">
                     <p class="school-name">学校法人 蜂窩学園</p>
                     <p class="subtext">HOUKA a K-12 school</p>
                 </a>
