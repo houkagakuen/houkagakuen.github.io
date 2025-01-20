@@ -69,10 +69,15 @@
             margin-right: 5px;
         }
 
+        .header-right a:hover {
+            color: #000;
+        }
+
         /* コンテンツ */
         .content {
-            min-height: 400px;
+            min-height: calc(100vh - 160px); /* フッターとヘッダーを差し引いた動的な高さ */
             padding: 40px 20px;
+            box-sizing: border-box;
         }
 
         .breadcrumbs {
@@ -163,7 +168,7 @@
     <!-- ヘッダー -->
     <header>
         <div class="header-left">
-            <a href="https://houkagakuen.github.io/top/">
+            <a href="https://houkagakuen.github.io/top/" style="text-decoration: none;">
                 <img src="https://houkagakuen.github.io/top/favicon.HEIF" alt="ロゴ">
             </a>
             <div>
