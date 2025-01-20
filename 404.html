@@ -69,9 +69,33 @@
             margin-right: 5px;
         }
 
+        /* コンテンツ */
         .content {
             min-height: 400px;
             padding: 40px 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content .description {
+            font-size: 14px;
+            font-weight: normal;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
         }
 
         footer {
@@ -105,6 +129,11 @@
 
         .sitemap-column ul li {
             margin-bottom: 8px;
+        }
+
+        .sitemap-column ul li a {
+            text-decoration: none;
+            color: #000;
         }
 
         .divider {
@@ -154,77 +183,83 @@
     </header>
 
     <!-- コンテンツ -->
-    <div class="content"></div>
+    <div class="content">
+        <div class="breadcrumbs">
+            <a href="https://houkagakuen.github.io/top/">○ TOP</a> → ○ 404 Not Found
+        </div>
+        <h1>404 Not Found</h1>
+        <div class="description">お探しのページは存在しません</div>
+    </div>
 
     <!-- フッター -->
     <footer>
         <div class="sitemap">
             <div class="sitemap-column">
-                <h4>トップページ</h4>
+                <h4><a href="https://houkagakuen.github.io/top/">トップページ</a></h4>
                 <ul>
-                    <li>NEWS</li>
-                    <li>TOPICS</li>
-                    <li>保護者の方へ</li>
-                    <li>卒業生の方へ</li>
-                    <li>緊急時の対応について</li>
-                    <li>アクセス</li>
-                    <li>資料請求</li>
-                    <li>お問い合わせ</li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">TOPICS</a></li>
+                    <li><a href="#">保護者の方へ</a></li>
+                    <li><a href="#">卒業生の方へ</a></li>
+                    <li><a href="#">緊急時の対応について</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">資料請求</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
                 </ul>
             </div>
             <div class="sitemap-column">
                 <h4>蜂窩学園について</h4>
                 <ul>
-                    <li>本校の特徴</li>
-                    <li>本校の研究</li>
-                    <li>教育について</li>
-                    <li>理事長メッセージ</li>
-                    <li>学校長メッセージ</li>
-                    <li>本校の歴史</li>
-                    <li>本校に入学するまで</li>
-                    <li>よくある質問</li>
+                    <li><a href="#">本校の特徴</a></li>
+                    <li><a href="#">本校の研究</a></li>
+                    <li><a href="#">教育について</a></li>
+                    <li><a href="#">理事長メッセージ</a></li>
+                    <li><a href="#">学校長メッセージ</a></li>
+                    <li><a href="#">本校の歴史</a></li>
+                    <li><a href="#">本校に入学するまで</a></li>
+                    <li><a href="#">よくある質問</a></li>
                 </ul>
             </div>
             <div class="sitemap-column">
                 <h4>幼児科</h4>
                 <ul>
-                    <li>幼児科部長メッセージ</li>
-                    <li>本校での一日</li>
-                    <li>コース紹介</li>
-                    <li>カリキュラム</li>
-                    <li>年間行事</li>
-                    <li>施設紹介</li>
-                    <li>諸費用</li>
-                    <li>編入学について</li>
-                    <li>制服</li>
+                    <li><a href="#">幼児科部長メッセージ</a></li>
+                    <li><a href="#">本校での一日</a></li>
+                    <li><a href="#">コース紹介</a></li>
+                    <li><a href="#">カリキュラム</a></li>
+                    <li><a href="#">年間行事</a></li>
+                    <li><a href="#">施設紹介</a></li>
+                    <li><a href="#">諸費用</a></li>
+                    <li><a href="#">編入学について</a></li>
+                    <li><a href="#">制服</a></li>
                 </ul>
             </div>
             <div class="sitemap-column">
                 <h4>初等科</h4>
                 <ul>
-                    <li>初等科部長メッセージ</li>
-                    <li>本校での一日</li>
-                    <li>コース紹介</li>
-                    <li>カリキュラム</li>
-                    <li>年間行事</li>
-                    <li>施設紹介</li>
-                    <li>諸費用</li>
-                    <li>編入学について</li>
-                    <li>制服</li>
+                    <li><a href="#">初等科部長メッセージ</a></li>
+                    <li><a href="#">本校での一日</a></li>
+                    <li><a href="#">コース紹介</a></li>
+                    <li><a href="#">カリキュラム</a></li>
+                    <li><a href="#">年間行事</a></li>
+                    <li><a href="#">施設紹介</a></li>
+                    <li><a href="#">諸費用</a></li>
+                    <li><a href="#">編入学について</a></li>
+                    <li><a href="#">制服</a></li>
                 </ul>
             </div>
             <div class="sitemap-column">
                 <h4>中等科</h4>
                 <ul>
-                    <li>中等科部長メッセージ</li>
-                    <li>本校での一日</li>
-                    <li>コース紹介</li>
-                    <li>カリキュラム</li>
-                    <li>年間行事</li>
-                    <li>施設紹介</li>
-                    <li>諸費用</li>
-                    <li>編入学について</li>
-                    <li>制服</li>
+                    <li><a href="#">中等科部長メッセージ</a></li>
+                    <li><a href="#">本校での一日</a></li>
+                    <li><a href="#">コース紹介</a></li>
+                    <li><a href="#">カリキュラム</a></li>
+                    <li><a href="#">年間行事</a></li>
+                    <li><a href="#">施設紹介</a></li>
+                    <li><a href="#">諸費用</a></li>
+                    <li><a href="#">編入学について</a></li>
+                    <li><a href="#">制服</a></li>
                 </ul>
             </div>
         </div>
