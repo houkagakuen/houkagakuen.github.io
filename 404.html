@@ -3,13 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>指定されたページが見つかりませんでした</title>
+    <title>お探しのページは存在しません</title>
+    <link rel="icon" href="https://houkagakuen.github.io/top/favicon.HEIF" type="image/heif">
     <style>
         body {
-            font-family: 'Noto Sans JP', sans-serif; /* ゴシック体 */
+            font-family: 'Noto Sans JP', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fff;
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header-left .school-name {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .header-left .subtext {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 12px;
+            margin: 0;
+            color: #333;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 14px;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .header-right a::before {
+            content: "〉";
+            color: #006400;
+            margin-right: 5px;
+        }
+
+        .content {
+            min-height: 400px;
+            padding: 40px 20px;
         }
 
         footer {
@@ -53,7 +115,7 @@
 
         .footer-bottom {
             text-align: center;
-            font-family: 'Noto Serif JP', serif; /* 明朝体 */
+            font-family: 'Noto Serif JP', serif;
             line-height: 1.6;
             color: #333;
         }
@@ -69,6 +131,32 @@
     </style>
 </head>
 <body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-left">
+            <a href="https://houkagakuen.github.io/top/">
+                <img src="https://houkagakuen.github.io/top/favicon.HEIF" alt="ロゴ">
+            </a>
+            <div>
+                <a href="https://houkagakuen.github.io/top/" style="text-decoration: none; color: inherit;">
+                    <p class="school-name">学校法人 蜂窩学園</p>
+                    <p class="subtext">HOUKA a K-12 school</p>
+                </a>
+            </div>
+        </div>
+        <nav class="header-right">
+            <a href="#">蜂窩学園について</a>
+            <a href="#">幼児科</a>
+            <a href="#">初等科</a>
+            <a href="#">中等科</a>
+            <a href="#">お問い合わせ</a>
+        </nav>
+    </header>
+
+    <!-- コンテンツ -->
+    <div class="content"></div>
+
+    <!-- フッター -->
     <footer>
         <div class="sitemap">
             <div class="sitemap-column">
@@ -78,6 +166,9 @@
                     <li>TOPICS</li>
                     <li>保護者の方へ</li>
                     <li>卒業生の方へ</li>
+                    <li>緊急時の対応について</li>
+                    <li>アクセス</li>
+                    <li>資料請求</li>
                     <li>お問い合わせ</li>
                 </ul>
             </div>
