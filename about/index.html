@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お探しのページは存在しません</title>
+    <link rel="icon" href="/favicon.HEIF" type="image/heif">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
 
+        /* ヘッダー */
+        header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header-left .school-name {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .header-left .subtext {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 12px;
+            margin: 0;
+            color: #333;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 14px;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .header-right a::before {
+            content: "〉";
+            color: #006400;
+            margin-right: 5px;
+        }
+
+        .header-right a:hover {
+            color: #000;
+        }
+
+        /* リンクの修正 */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:visited {
+            color: inherit;
+        }
+
+        /* コンテンツ */
+        .content {
+            padding: 20px 20px 40px;
+            box-sizing: border-box;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content .description {
+            font-size: 14px;
+            font-weight: normal;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .sitemap {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .sitemap-column {
+            flex: 1;
+            min-width: 180px;
+            margin: 0 10px;
+        }
+
+        .sitemap-column h4 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sitemap-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sitemap-column ul li {
+            margin-bottom: 8px;
+        }
+
+        .sitemap-column ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-family: 'Noto Serif JP', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .footer-bottom .school-name {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom .subtext {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-left">
+            <a href="https://houkagakuen.github.io/">
+                <img src="https://houkagakuen.github.io/favicon.HEIF" alt="ロゴ">
+            </a>
+            <div>
+                <a href="https://houkagakuen.github.io/">
+                    <p class="school-name">学校法人 蜂窩学園</p>
+                    <p class="subtext">HOUKA a K-12 school</p>
+                </a>
+            </div>
+        </div>
+        <nav class="header-right">
+            <a href="/about">蜂窩学園について</a>
+            <a href="/infant">幼児科</a>
+            <a href="/primary">初等科</a>
+            <a href="/secondary">中等科</a>
+            <a href="/contact">お問い合わせ</a>
+        </nav>
+    </header>
+
+    <!-- コンテンツ -->
+<div class="content">
+    <!-- 見出し用画像 -->
+    <div class="title-image" style="position: relative; text-align: center; margin-bottom: 20px;">
+        <img src="https://houkagakuen.github.io/file/title/IMG_2482.jpeg" alt="蜂窩学園について" style="width: 100%; height: auto;">
+        <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            font-family: 'Noto Serif JP', serif; font-size: 36px; font-weight: bold; color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+            蜂窩学園について
+        </h1>
+    </div>
+
+    <!-- パンくずリスト -->
+    <div class="breadcrumbs">
+        <a href="https://houkagakuen.github.io/">○ TOP</a> → ○ 404 Not Found
+    </div>
+
+    <!-- コンテンツ本文 -->
+    <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-family: 'Noto Serif JP', serif; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            互いを刺激し合い、心身を鍛える
+        </h2>
+        <div style="border: 1px solid #ccc; padding: 20px; width: 80%; max-width: 600px; margin: 0 auto; text-align: left; 
+            font-family: 'Noto Sans JP', sans-serif; font-size: 14px; font-weight: normal; line-height: 1.6;">
+            ここにテキストを入力
+        </div>
+    </div>
+</div>
+
+    <!-- フッター -->
+    <footer>
+        <div class="sitemap">
+            <div class="sitemap-column">
+                <h4><a href="/">トップページ</a></h4>
+                <ul>
+                    <li><a href="/news">NEWS</a></li>
+                    <li><a href="/topics">TOPICS</a></li>
+                    <li><a href="/about">蜂窩学園について</a></li>
+                    <li><a href="/infant">幼児科</a></li>
+                    <li><a href="/primary">初等科</a></li>
+                    <li><a href="/secondary">中等科</a></li>
+                    <li><a href="/contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <div class="sitemap-column">
+                <h4><a href="/about">蜂窩学園について</a></h4>
+                <ul>
+                    <li><a href="/about/personality">本校の特徴</a></li>
+                    <li><a href="/about/study">本校の研究</a></li>
+                    <li><a href="/about/education">教育について</a></li>
+                    <li><a href="/about/message">管理職ご挨拶</a></li>
+                    <li><a href="/about/history">本校の歴史</a></li>
+                    <li><a href="/about/entry">本校に入学するまで</a></li>
+                    <li><a href="/about/faq">よくある質問</a></li>
+                </ul>
+            </div>
+            <div class="sitemap-column">
+                <h4><a href="/infant">幼児科</a></h4>
+                <ul>
+                    <li><a href="/infant/message">幼児科部長ご挨拶</a></li>
+                    <li><a href="/infant/1day">本校での一日</a></li>
+                    <li><a href="/infant/course">コース紹介</a></li>
+                    <li><a href="/infant/curriculum">カリキュラム</a></li>
+                    <li><a href="/infant/event">年間行事</a></li>
+                    <li><a href="/infant/facility">施設紹介</a></li>
+                    <li><a href="/infant/cost">諸費用</a></li>
+                    <li><a href="/infant/entry">入学案内</a></li>
+                    <li><a href="/infant/uniform">制服</a></li>
+                </ul>
+            </div>
+            <div class="sitemap-column">
+                <h4><a href="/primary">初等科</a></h4>
+                <ul>
+                    <li><a href="/primary/message">初等科部長ご挨拶</a></li>
+                    <li><a href="/primary/1day">本校での一日</a></li>
+                    <li><a href="/primary/course">コース紹介</a></li>
+                    <li><a href="/primary/curriculum">カリキュラム</a></li>
+                    <li><a href="/primary/event">年間行事</a></li>
+                    <li><a href="/primary/facility">施設紹介</a></li>
+                    <li><a href="/primary/cost">諸費用</a></li>
+                    <li><a href="/primary/entry">入学案内</a></li>
+                    <li><a href="/primary/uniform">制服</a></li>
+                </ul>
+            </div>
+            <div class="sitemap-column">
+                <h4><a href="/secondary">中等科</a></h4>
+                <ul>
+                    <li><a href="/secondary/message">中等科部長ご挨拶</a></li>
+                    <li><a href="/secondary/1day">本校での一日</a></li>
+                    <li><a href="/secondary/course">コース紹介</a></li>
+                    <li><a href="/secondary/curriculum">カリキュラム</a></li>
+                    <li><a href="/secondary/event">年間行事</a></li>
+                    <li><a href="/secondary/facility">施設紹介</a></li>
+                    <li><a href="/secondary/cost">諸費用</a></li>
+                    <li><a href="/secondary/entry">入学案内</a></li>
+                    <li><a href="/secondary/uniform">制服</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-bottom">
+            <div class="school-name">学校法人 蜂窩学園</div>
+            <div class="subtext">HOUKA a K-12 school</div>
+        </div>
+    </footer>
+</body>
+</html>
